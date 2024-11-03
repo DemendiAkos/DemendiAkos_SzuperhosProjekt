@@ -53,7 +53,7 @@ class VasemberTest {
     @Test
     void implementsInterfaces()
     {
-        assertInstanceOf(Szuperhos.class, vasember);
+        assertInstanceOf(SzuperHos.class, vasember);
         assertInstanceOf(Milliardos.class, vasember);
         assertInstanceOf(Bosszuallo.class, vasember);
     }

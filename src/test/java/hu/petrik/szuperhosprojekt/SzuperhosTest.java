@@ -13,7 +13,7 @@ class SzuperhosTest {
         Class<?> c = Class.forName("hu.petrik.szuperhosprojekt.Szuperhos");
         assertTrue(Modifier.isInterface(c.getModifiers()));
 
-        assertTrue(Modifier.isAbstract(c.getMethod("legyoziE", Szuperhos.class).getModifiers()));
+        assertTrue(Modifier.isAbstract(c.getMethod("legyoziE", SzuperHos.class).getModifiers()));
         assertTrue(Modifier.isAbstract(c.getMethod("mekkoraAzEreje").getModifiers()));
     }
 }
