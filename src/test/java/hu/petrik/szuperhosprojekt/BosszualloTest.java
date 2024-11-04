@@ -96,6 +96,6 @@ class BosszualloTest {
     @Test
     void ImplementsInterfaces()
     {
-        assertInstanceOf(SzuperHos.class, bosszuallo);
+        assertInstanceOf(Szuperhos.class, bosszuallo);
     }
 }

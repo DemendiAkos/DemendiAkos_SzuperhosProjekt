@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BatmanTest {
-    private class SzuperhosMock implements SzuperHos
+    private class SzuperhosMock implements Szuperhos
     {
         @Override
-        public boolean legyoziE(SzuperHos szuperhos)
+        public boolean legyoziE(Szuperhos szuperhos)
         {
             return false;
         }

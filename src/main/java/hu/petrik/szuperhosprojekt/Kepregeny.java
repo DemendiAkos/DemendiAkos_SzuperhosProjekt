@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Kepregeny {
 
-    public static List<SzuperHos> szuperhosLista = new ArrayList<>();
+    public static List<Szuperhos> szuperhosLista = new ArrayList<>();
 
     public static void szereplok(String fajlElérésiÚtja) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fajlElérésiÚtja))) {
@@ -18,7 +18,7 @@ public class Kepregeny {
                 String type = parts[0];
                 int count = Integer.parseInt(parts[1]);
 
-                SzuperHos hero;
+                Szuperhos hero;
                 if (type.equalsIgnoreCase("Batman")) {
                     hero = new Batman();
                 } else if (type.equalsIgnoreCase("Vasember")) {
@@ -43,7 +43,7 @@ public class Kepregeny {
     }
 
     public static void szuperhosok() {
-        for (SzuperHos szuperhos : szuperhosLista) {
+        for (Szuperhos szuperhos : szuperhosLista) {
             System.out.println(szuperhos);
         }
     }

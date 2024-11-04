@@ -2,7 +2,7 @@ package hu.petrik.szuperhosprojekt;
 
 import java.text.MessageFormat;
 
-public class Batman implements SzuperHos, Milliardos {
+public class Batman implements Szuperhos, Milliardos {
     private double lelemenyesseg;
 
     public Batman() {
@@ -15,7 +15,7 @@ public class Batman implements SzuperHos, Milliardos {
     }
 
     @Override
-    public boolean legyoziE(SzuperHos masikHos) {
+    public boolean legyoziE(Szuperhos masikHos) {
         return masikHos.mekkoraAzEreje() < this.lelemenyesseg;
     }
 

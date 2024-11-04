@@ -2,7 +2,7 @@ package hu.petrik.szuperhosprojekt;
 
 import java.text.MessageFormat;
 
-public abstract class Bosszuallo implements SzuperHos {
+public abstract class Bosszuallo implements Szuperhos {
 
     private double szuperero;
     private boolean vanEGyengesege;
@@ -20,7 +20,7 @@ public abstract class Bosszuallo implements SzuperHos {
     }
 
     @Override
-    public boolean legyoziE(SzuperHos masikHos) {
+    public boolean legyoziE(Szuperhos masikHos) {
         if (masikHos instanceof Bosszuallo) {
             Bosszuallo bosszualloHos = (Bosszuallo) masikHos;
             if (bosszualloHos.vanEGyengesege && bosszualloHos.mekkoraAzEreje() < this.szuperero) {
